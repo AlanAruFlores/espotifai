@@ -1,0 +1,89 @@
+#mi-perfil{
+    margin-top: 120px;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background-color: #47345aa1;
+}
+#mi-perfil:hover{
+    color: #b387dc;
+    cursor: default;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+}
+.contenedor-padre{
+    justify-content: center;
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #20232b98;
+    gap: 40px;
+}
+.con-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.con{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.con input{
+    padding: 7px;
+    border-radius: 15px;
+    border-style: solid;
+}
+.con label{
+    font-size: 20px;
+    color: #fff;
+}
+#fecha{
+    text-align: center;
+}
+.con-links a{
+    padding: 15px;
+    color: #fff;
+}
+.con-links a:hover{
+    color: #b387dc;
+}
+.con-btn form button{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: #20232b98;
+    color: #fff;
+}
+.con-btn form button:hover{
+    background-color: #b387dc;
+    color: #000;
+}
+@media (max-width: 599px){
+    #mi-perfil{
+        margin-top: 100px;
+        font-size: 15px;
+    }
+    main{
+        padding-top: 160px;
+    }
+    .con label{
+        font-size: 15px;
+    }
+    .contenedor-padre{
+        width: 75%;
+    }
+}

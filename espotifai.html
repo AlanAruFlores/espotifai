@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espotifai</title>
+    <link rel="stylesheet" href="css/estilo_espotifai.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+            <div class="menu-container">
+                <div class="barra-logo">
+                    <a href="espotifai.html" class="logo-content"> 
+                        <img src="img/icono.png" alt="" class="logo">
+                    </a>
+                    <div class="content-buscador">
+                        <input type="text" id="barra-buscador" placeholder="Buscar">
+                        <label for="barra-buscador" id="boton-buscador-content">
+                            <span class="material-symbols-outlined" id="boton-buscador" title="Buscar">
+                                search
+                                <link href="#">
+                            </span> 
+                        </label>
+                    </div>
+                    <div class="logo-user-content">
+                        <a href="perfil.html">
+                            <span class="material-symbols-outlined" id="logo-user-item" title="Perfil">
+                                account_circle
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <nav class="navbar" id="navbar-id">
+                    <ul class="menuactive" id="menu-ul">
+                        <li><a href="espotifai.html" class="menuactive-item">Home</a></li>
+                        <li><a href="albums.html" class="menuactive-item">Mis Albums</a></li>
+                        <li><a href="canciones.html" class="menuactive-item">Mis Favoritos</a></li>
+                        <li><a href="premium.html" class="menuactive-item">Premium</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div class="cuerpo-pagina">
+        <div class="banner">
+            <ul class="integrantes">
+                <li><a href="#" class="integrantes-item">Viale Gonzalo</a></li>
+                <li><a href="#" class="integrantes-item">Diaz Sebastian</a></li>
+                <li><a href="#" class="integrantes-item">Aruquipa Alan</a></li>
+                <li><a href="#" class="integrantes-item">Zaccardo Martin</a></li>
+                <li><a href="#" class="integrantes-item">Ramos Gonzalo</a></li>
+            </ul>
+            <div class="cancion-recomendada" id="cancion-recomendada">
+                <span class="material-symbols-outlined" id="star-recomendado">
+                    star
+                </span>
+                <span class="material-symbols-outlined" id="play-recomendado">
+                    play_circle
+                </span>
+                <h2 class="titulo-cancion">
+                    Si Volvieras A Mi - Pablo Gonzi 
+                </h2>
+            </div>
+        </div>
+        <div class="canciones-recomendadas">
+            <div class="cancion-item" id="elvis">
+                <span class="material-symbols-outlined" id="star">
+                    star
+                </span>
+                <span class="material-symbols-outlined play" id="play">
+                    play_circle
+                </span>
+                <h2 class="titulo-cancion">
+                    Cant Help Falling in Love - Elvis
+                </h2>
+            </div>
+            <div class="cancion-item" id="creedence">
+                <span class="material-symbols-outlined" id="star">
+                    star
+                </span>
+                <span class="material-symbols-outlined" id="play">
+                    play_circle
+                </span>
+                <h2 class="titulo-cancion">
+                    Have You Ever Seen The Rain - Creedence
+                </h2>
+            </div>
+            <div class="cancion-item" id="heroes">
+                <span class="material-symbols-outlined" id="star">
+                    star
+                </span>
+                <span class="material-symbols-outlined" id="play">
+                    play_circle
+                </span>
+                <h2 class="titulo-cancion">
+                    Maldito Duende - Heroes del Silencio
+                </h2>
+            </div>
+            <div class="cancion-item" id="genesis">
+                <span class="material-symbols-outlined" id="star">
+                    star
+                </span>
+                <span class="material-symbols-outlined" id="play">
+                    play_circle
+                </span>
+                <h2 class="titulo-cancion">
+                    Mama - Genesis 
+                </h2>
+            </div>
+            <div class="cancion-item" id="guns">
+                <span class="material-symbols-outlined" id="star">
+                    star
+                </span>
+                <span class="material-symbols-outlined" id="play">
+                    play_circle
+                </span>
+                <h2 class="titulo-cancion">
+                    November Rain - Guns n Roses
+                </h2>
+            </div>
+            <div class="cancion-item" id="bruce">
+                <span class="material-symbols-outlined" id="star">
+                    star
+                </span>
+                <span class="material-symbols-outlined" id="play">
+                    play_circle
+                </span>
+                <h2 class="titulo-cancion">
+                    Tears of the Dragon - Bruce Dickinson
+                </h2>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/audio_script.js" type="module"></script>
+    <script src="../js/agregar_favorito.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+}
+.contenedor-padre{
+    justify-content: center;
+    width: 70%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #20232b98;
+    gap: 40px;
+}
+#elegi-tu-plan{
+    margin-top: 120px;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background-color: #47345aa1;
+}
+#elegi-tu-plan:hover{
+    color: #b387dc;
+    cursor: default;
+}
+.card{
+    width: 400px;
+    border-radius: 22px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.con{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.con label{
+    font-size: 20px;
+    color: #fff;
+}
+.con input{
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border-style: solid;
+}
+.adquirir{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: #20232b;
+    color: #fff;
+}
+.adquirir:hover{
+    background-color: #b387dc;
+    cursor: pointer;
+}
+@media (max-width: 599px){
+    #elegi-tu-plan{
+        margin-top: 100px;
+        font-size: 15px;
+    }
+    main{
+        padding-top: 160px;
+    }
+}
+@media (max-width: 747px){
+    .card{
+        width: 300px;
+    }
+}
+@media (max-width: 460px){
+    .card{
+        width: 200px;
+    }
+}

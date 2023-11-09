@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Canciones Favoritas</title>
+    <link rel="stylesheet" href="css/canciones.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="barra-logo">
+                <a href="espotifai.html" class="logo-content"> 
+                    <img src="img/icono.png" alt="" class="logo">
+                </a>
+                <div class="content-buscador">
+                    <input type="text" id="barra-buscador" placeholder="Buscar">
+                    <label for="barra-buscador" id="boton-buscador-content">
+                        <span class="material-symbols-outlined" id="boton-buscador" title="Buscar">
+                            search
+                            <link href="#">
+                        </span> 
+                    </label>
+                </div>
+                <div class="logo-user-content">
+                    <a href="perfil.html">
+                        <span class="material-symbols-outlined" id="logo-user-item" title="Perfil">
+                            account_circle
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <nav class="navbar" id="navbar-id">
+                <ul class="menuactive" id="menu-ul">
+                    <li><a href="espotifai.html" class="menuactive-item">Home</a></li>
+                    <li><a href="albums.html" class="menuactive-item">Mis Albums</a></li>
+                    <li><a href="canciones.html" class="menuactive-item">Mis Favoritos</a></li>
+                    <li><a href="premium.html" class="menuactive-item">Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h3 class="titulo">Mis Canciones Favoritas</h3>
+    <main class="main">
+        <table >
+            <tr>
+                <th>Reproducir</th>
+                <th class="canc">Cancion</th>
+                <th class="alb">Album</th>
+                <th class="dur">Duracion</th>
+                <th class="rep">Reproducciones</th>
+            </tr>
+            <tr id="filtros">    
+                <td class="campo-filtro canc" id="filtro-busqueda">
+                    <select name="busqueda" id="busqueda"> 
+                        <option value="">Mostrar Todo</option>
+                        <option value="[A-Ea-e]">A-E</option>
+                        <option value="[E-Je-j]">E-J</option>
+                        <option value="[K-Sk-s]">K-S</option>
+                        <option value="[T-Zt-z]">T-Z</option>
+                    </select> 
+                </td>
+                <td class="campo-filtro canc">
+                </td>
+                <td class="campo-filtro alb">
+                </td>
+                <td class="campo-filtro dur">
+                    <select name="duracion" id="duracion"> 
+                        <option value="">Mostrar Todo</option>
+                        <option value="1">0:00 - 3:00</option>
+                        <option value="2">3:00 - 5:00</option>
+                        <option value="3">5:00 - 10:00</option>
+                    </select> 
+                </td>
+                <td class="campo-filtro rep">
+                    <select name="reproduccion" id="reproduccion"> 
+                        <option value="0">Mostrar Todo</option>
+                        <option value="1">0-100</option>
+                        <option value="2">100-1000 </option>
+                        <option value="3">1000-10000</option>
+                        <option value="4"> > 10000</option>
+                    </select> 
+                </td>
+            </tr>
+
+            <tbody id="lista_favoritas">
+
+            </tbody>
+
+        </table>
+    </main>
+    <script src="./js/canciones_añadidas_favoritos.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!---
+            <tr>
+                <td><audio controls class="canc"><source src="music/cant-help-falling-in-love-official-audio.mp3"/></audio></td>
+                <td>Cant Help Falling In Love</td>
+                <td class="alb"><img src="img/Cant-help-falling-in-love-Elvis-Presley.jpg" alt=""></td>
+                <td class="dur">2:59</td>
+                <td class="rep">200034</td>
+            </tr>
+
+            <tr>
+                <td><audio controls class="canc"><source src="music/have-you-ever-seen-the-rain.mp3"/></audio></td>
+                <td>Have You Ever Seen The Rain</td>
+                <td class="alb"><img src="img/Have-you-ever-seen-the-rain-creedence.jpg" alt=""></td>
+                <td class="dur">2:44</td>
+                <td class="rep">2104566</td>
+            </tr>
+
+            <tr>
+                <td><audio controls class="canc"><source src="music/maldito-duende-remaster-2018.mp3"/></audio></td>
+                <td>Maldito Duende</td>
+                <td class="alb"><img src="img/Maldito-Duende-Single.jpg" alt=""></td>
+                <td class="dur">4:15</td>
+                <td class="rep">4327652</td>
+            </tr>
+
+            <tr>
+                <td><audio controls class="canc"><source src="music/genesis-mama-lyrics.mp3"/></audio></td>
+                <td>Mama</td>
+                <td class="alb"><img src="img/Mama-Genesis.jpg" alt=""></td>
+                <td class="dur">6:36</td>
+                <td class="rep">132546</td>
+            </tr>
+            
+            <tr>
+                <td><audio controls class="canc"><source src="music/guns-n-roses-lyric-top-song.mp3"/></audio></td>
+                <td>November Rain</td>
+                <td class="alb"><img src="img/November-rain-Guns-n-Roses.jpg" alt=""></td>
+                <td class="dur">6:38</td>
+                <td class="rep">1594895</td>
+            </tr>
+
+            <tr>
+                <td><audio controls class="canc"><source src="music/tears-of-the-dragon-lyrics-for-desktop.mp3"/></audio></td>
+                <td>Tears of the Dragon</td>
+                <td class="alb"><img src="img/Tears-of-the-dragon-Bruce-Dickinson.jpg" alt=""></td>
+                <td class="dur">6:18</td>
+                <td class="rep">519357</td>
+            </tr>
+        -->

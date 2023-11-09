@@ -1,0 +1,227 @@
+
+
+
+.cuerpo-pagina{
+    padding-top: 120px;
+    width: 100%;
+    display: flex;
+    grid-template-columns:20px, 20px;
+}
+.banner{
+    width: 220px;
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #2A2233;
+}
+
+
+
+.integrantes{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 10px;
+}
+.integrantes-item{
+    font-size: 18px;
+    color: #fff;
+    font-family: "rnssans";
+    font-weight: 600;
+}
+.integrantes-item:hover{
+    background-color: #b387dc;
+    padding: 10px;
+    border-radius: 20px;
+}
+#cancion-recomendada{
+    margin: 0px 10px;
+}
+.cancion-recomendada{
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    background-image: url(../img/Si-volvieras-a-mi-Pablo-Gonzi.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s;
+    .titulo-cancion{
+        display: none;
+    }
+    #play{
+        display: none;
+    }
+    #play-recomendado{
+        display: none;
+    }
+    #star{
+        display: none;
+    }
+    #star-recomendado{
+        display: none;
+    }
+}
+.cancion-recomendada:hover{
+    transition: all .5s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.553),rgba(0, 0, 0, 0.553)),
+                        url(../img/Si-volvieras-a-mi-Pablo-Gonzi.jpg);
+     .titulo-cancion{
+        font-size: 15px;
+        color: #fff;
+        transition: .5s;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #play{
+        display: block;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    #play-recomendado{
+        display: block;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    #star{
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        text-align: end;
+        font-size: 40px;
+    }
+    #star-recomendado{
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        text-align: end;
+        font-size: 40px;
+    }
+}
+.reproductor-banner{
+    height: 40px;
+    width: 220px;
+}
+
+.cancion-item{
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 70px;
+    background-image: url(../img/Cant-help-falling-in-love-Elvis-Presley.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s;
+    .titulo-cancion{
+        display: none;
+    }
+    #play{
+        display: none;
+    }
+    #star{
+        display: none;
+    }
+}
+.cancion-item:hover{
+    transition: all .5s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.553),rgba(0, 0, 0, 0.553)),
+                        url(../img/Cant-help-falling-in-love-Elvis-Presley.jpg);
+     .titulo-cancion{
+        font-size: 15px;
+        color: #fff;
+        transition: .5s;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #play{
+        display: block;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    #star{
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        text-align: end;
+        font-size: 40px;
+    }
+}
+#creedence{
+    background-image: url(../img/Have-you-ever-seen-the-rain-creedence.jpg);
+}
+#creedence:hover{
+    transition: all .5s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.553),rgba(0, 0, 0, 0.553)),
+                        url(../img/Have-you-ever-seen-the-rain-creedence.jpg);
+}
+#heroes{
+    background-image: url(../img/Maldito-Duende-Single.jpg);
+}
+#heroes:hover{
+    transition: all .5s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.553),rgba(0, 0, 0, 0.553)),
+                        url(../img/Maldito-Duende-Single.jpg);
+}
+#genesis{
+    background-image: url(../img/Mama-Genesis.jpg);
+}
+#genesis:hover{
+    transition: all .5s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.553),rgba(0, 0, 0, 0.553)),
+                        url(../img/Mama-Genesis.jpg);
+}
+#guns{
+    background-image: url(../img/November-rain-Guns-n-Roses.jpg);
+}
+#guns:hover{
+    transition: all .5s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.553),rgba(0, 0, 0, 0.553)),
+                        url(../img/November-rain-Guns-n-Roses.jpg);
+}
+#bruce{
+    background-image: url(../img/Tears-of-the-dragon-Bruce-Dickinson.jpg);
+}
+#bruce:hover{
+    transition: all .5s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.553),rgba(0, 0, 0, 0.553)),
+                        url(../img/Tears-of-the-dragon-Bruce-Dickinson.jpg);
+}
+#logo-user-item{
+    color: whitesmoke;
+}
+.canciones-recomendadas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+@media (max-width: 599px) {
+    .cuerpo-pagina{
+        padding-top: 100px;
+    }
+    .banner{
+        display: none;
+    }
+}
+    
+    
+    
+    
